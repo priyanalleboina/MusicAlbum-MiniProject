@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./dist/bundler.js"></script>
+</head>
+<body onload="ui.getMusicalbumListData();">
+  <div>
+    <h1>Example Client Muisc Album Data</h1>
+    <p>
+      <label>Music Album Id:</label> <input id="musicalbum_id" placeholder="enter music id"></p>
+      <p>
+        <label>Album Name:</label>
+        <select id='albumid'>
+          <option value=" ">-- Select --</option>
+        </select>
+      </p>
+      <p>
+        <label>Title Name:</label>
+        <select id='titleid'>
+          <option value=" ">-- Select --</option>
+        </select>
+      </p>
+      <p>
+        <label>Artist Name:</label>
+        <select id='artistid'>
+          <option value=" ">-- Select --</option>
+        </select>
+      </p>
+      <p>
+        <label>Genre Type:</label>
+        <select id='genreid'>
+          <option value=" ">-- Select --</option>
+        </select>
+      </p>
+    <button id="add" onclick='ui.addMusicAlbumInfo();'>Add MuiscALbum</button>
+     <button onclick='ui.getMyMusicAlbum();'>List Muisc Album</button><br>
+     <label id= 'mydata' style='color:green'></label>
+    </p>
+  </div>
+  <div>
+    <p id="result"></p>
+  </div>
+  <div>
+    <p>
+      <label>Album Name:</label>
+      <select id='albumiddata'>
+        <option value=" ">-- Select --</option>
+      </select>
+      <button onclick='ui.getMuiscAlbumList();' >Get Data</button>
+      <p id="musicAllData"></p>
+    </p>
+  </div>
+</body>
+</html>

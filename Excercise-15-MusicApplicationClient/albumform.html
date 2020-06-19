@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./dist/bundler.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Example Client ALbum Data</h1>
+    <p>
+      <label>ALbum Id:</label> <input id="album_id" placeholder="enter album id"></p>
+    <p>
+      <label>Album Name:</label>
+      <input id="album_name" placeholder="enter album name">
+    </p>
+    <p>
+    <label>Year:</label>
+        <input id="year" placeholder="enter year">
+      </p>
+    <button id="add" onclick='ui.addAlbumInfo();'>Add Album</button>
+     <button onclick='ui.getMyAlbum();'>List Album</button><br>
+     <label id= 'mydata' style='color:green'></label>
+    </p>
+  </div>
+  <div>
+    <p id="result"></p>
+  </div>
+</body>
+</html>

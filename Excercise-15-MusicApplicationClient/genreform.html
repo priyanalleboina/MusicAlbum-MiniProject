@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./dist/bundler.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Example Client Genre Data</h1>
+    <p>
+      <label>Genre Id:</label> <input id="genre_id" placeholder="enter genre id"></p>
+    <p>
+      <label>Genre Name:</label>
+      <input id="genre_name" placeholder="enter genre name">
+    </p>
+    <button id="add" onclick='ui.addGenreInfo();'>Add Genre</button>
+     <button onclick='ui.getMyGenre();'>List Genre</button><br>
+     <label id= 'mydata' style='color:green'></label>
+    </p>
+  </div>
+  <div>
+    <p id="result"></p>
+  </div>
+</body>
+</html>
